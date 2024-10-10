@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup.jsx";
+import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import VerifyEmail from "./pages/VerifyEmail";
@@ -81,7 +81,7 @@ function App() {
           path="/signup"
           element={
             <OpenRoute>
-              <Signup />
+              <SignUp />
             </OpenRoute>
           }
         />
