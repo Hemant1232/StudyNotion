@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/common/Navbar";
-import Footer from "./Components/common/Footer";
+// import Footer from "./Components/common/Footer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -162,7 +162,7 @@ function App() {
 
         <Route path="*" element={<Home />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
