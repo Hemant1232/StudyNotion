@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { setCourse, setEditCourse, setStep } from '../../../../slices/courseSlice';
-import { COURSE_STATUS } from '../../../../utils/constants';
+import { COURSE_STATUS } from '../../../../utils/Constants';
 import { addCourseToCategory, editCourseDetails } from '../../../../services/operations/courseDetailsAPI';
 import toast from 'react-hot-toast';
 import { useEffect } from 'react';
