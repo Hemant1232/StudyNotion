@@ -17,7 +17,7 @@ const SignUp = () => {
   const [accountType, setAccountType] = useState(ACCOUNT_TYPE.STUDENT);
   
     const [formData, setFormData] = useState({
-      firstName: "",
+      firstName: "", 
       lastName: "",
       email: "",
       password: "",
