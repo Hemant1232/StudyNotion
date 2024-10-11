@@ -244,3 +244,17 @@ details > summary::-webkit-details-marker {
 .section_heading {
   @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
 }
+
+@media (min-width: 768px) {
+  .offSidebar1 {
+    height: calc(100vh - 3.5rem) !important;
+    width: 320px !important;
+  }
+  .offSidebar2 {
+    display: block !important;
+  }
+  .offSidebar3{
+    width: fit-content !important;
+    height: fit-content !important; 
+  }
+}
