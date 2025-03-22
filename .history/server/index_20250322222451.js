@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
 	cors({ 
-		origin:"*",
+		origin:"",
 		credentials:true,
 	})
 )
