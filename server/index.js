@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Updated CORS configuration
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['https://study-notion-puce-one.vercel.app/'];
 
 app.use(cors({
     origin: function (origin, callback) {
