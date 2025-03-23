@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { RiLoopLeftFill } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
-import { signUp } from "../services/operations/authAPI";
+import { sendOtp, signUp } from "../services/operations/authAPI";
 
 const VerifyEmail = () => {
   const [otp, setOtp] = useState("");
@@ -12,7 +12,7 @@ const VerifyEmail = () => {
   const dispatch = useDispatch();
   const { signupData } = useSelector((state) => state.auth);
 
-  useEffect(() => {
+  useEffect(() => { 
     if (!signupData) {
       navigate("/signup");
     }
@@ -79,12 +79,12 @@ const VerifyEmail = () => {
           </button>
         </form>
         <div className="flex items-center justify-between">
-          <Link className="flex items-center justify-center gap-2">
+          <Link to="/signup" className="flex items-center justify-center gap-2">
             <MdOutlineKeyboardBackspace /> Back to Signup
           </Link>
           <button
             className="flex items-center gap-2 text-blue-100"
-            onClick={() => dispatch(signupData.email)}
+            onClick={() => dispatch(sendOtp(signupData.email, navigate))}
           >
             <RiLoopLeftFill /> Resend it
           </button>
